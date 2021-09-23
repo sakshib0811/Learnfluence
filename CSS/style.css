@@ -1,0 +1,266 @@
+body{
+  font-family: "montserrat";
+  background-color: #FFFFFF;
+}
+/* website logo positioning */
+.logo {
+  height : 60px;
+  width :170px;
+  padding-left: 10px;
+}
+
+
+/* Add a yellow background color to the top navigation */
+.topnav {
+  background-color: #FCFFA6;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #FF0000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover {
+
+  color: #66DE93;
+}
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1200px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+h1{
+  font-family: "montserrat-black";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#learn-more{
+  background-color: #66DE93;
+}
+
+/* wave desugn in bottom on navigation bar*/
+.custom-shape-divider-top-1631688178 {
+    position: absolute;
+    width: 100%;
+   overflow: hidden;
+   line-height: 0;
+}
+.custom-shape-divider-top-1631688178 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 118px;
+}
+.custom-shape-divider-top-1631688178 .shape-fill {
+    fill: #FCFFA6;
+}
+
+.About_page{
+  background-image: url("bg1.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.about_text{
+  padding-left: 100px;
+    padding-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+
+/*wave top of bus degign*/
+.custom-shape-divider-top-1631690180 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-1631690180 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 200px;
+
+}
+.custom-shape-divider-top-1631690180 .shape-fill {
+    fill: #F25287;
+}
+
+
+.divider{
+  background-image: url("b1.png");
+  margin-top: -36px;
+  height: 333px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.about_texte{
+  width: 100%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.welcome{
+  font-weight: bolder;
+}
+
+.school_bus{
+  width:cover;
+}
+
+@media (max-width:500px){
+  .school_bus{
+    align:center;
+  }
+
+  .graphic{
+    width:100%;
+  }
+
+  #intro{
+    margin-right: 150px;
+
+  }
+}
+
+.graphic{
+  float: left;
+  margin-right: 30px;
+}
+
+
+.graphic:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+
+#intro{
+  padding-top: 150px;
+  padding-left: 150px;
+}
+
+.heading{
+  font-family: Lobster Two;
+  font-weight: bold;
+  color: #FFCC29;
+}
+
+#brand{
+  color: #66DE93;
+  font-weight: bolder;
+}
+
+.intro1{
+  font-weight:normal;
+  font-family: Lobster Two;
+  color: #F25287;
+}
+
+.intro2{
+  font-family: Kaisei Tokumin;
+  font-size: 13px;
+}
+
+.logo1{
+  height: 95px;
+  width:100%;
+}
+
+.Courses{
+  text-align: center;
+  color: #FF2442;
+  font-weight: bolder;
+}
+
+#features{
+  padding: 7% 15%;
+  padding-top: 45px;
+  background-color: #FEFBF3;
+}
+
+.feature-box{
+  text-align: center;
+  padding: 5%;
+}
+
+.icon{
+  color: #66DE93;
+  margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color:#FF2442;
+    
+}

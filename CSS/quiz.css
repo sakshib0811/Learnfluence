@@ -1,0 +1,78 @@
+.image_main{
+  width: 100%;
+  height: 530px;
+  padding-bottom: 20px;
+}
+
+.content{
+  background-image: url("blank_bg2.jpg");
+  margin-top: -36px;
+  height: 300px;
+  align-items: center;
+
+}
+
+.container{
+    width:500px;
+    max-width: 80%;
+    background-color: #F6EEC9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px 10px;
+    display: none;
+    color: #d6c02d;
+
+}
+
+#ques_one{
+    display: none;
+}
+
+.bt{
+  margin-top: 10px;
+}
+
+/* START QUIZ BUTTON */
+
+.Start_Quiz{
+  align-items: center;
+  margin-left: 36%;
+}
+
+.btn {
+  margin-top: 10px;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 29;
+  -moz-border-radius: 29;
+  border-radius: 29px;
+  text-shadow: 8px 4px 0px #575357;
+  -webkit-box-shadow: 5px 7px 6px #666666;
+  -moz-box-shadow: 5px 7px 6px #666666;
+  box-shadow: 5px 7px 6px #666666;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 51px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
+#home_page{
+  display: none;
+}
