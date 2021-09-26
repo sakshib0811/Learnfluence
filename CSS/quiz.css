@@ -72,6 +72,11 @@
   text-decoration: none;
 }
 
+@media screen and (max-width:1200px) {
+  .btn{
+    margin-left: -100px;
+  }
+}
 
 #home_page{
   display: none;

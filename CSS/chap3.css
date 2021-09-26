@@ -108,7 +108,7 @@ background-color: #FEFBF3;
 }
 
 .About_page{
-  background-image: url("bg4.jpg"); /* The image used */
+  background-image: url("chap3.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 500px; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -127,6 +127,7 @@ background-color: #FEFBF3;
   background-size: cover;
 }
 
+
 .about_texte{
   width: 100%;
     padding-top: 100px;
@@ -135,10 +136,14 @@ background-color: #FEFBF3;
 
 .heading_one{
   font-weight: bolder;
-  font-size: 80px;
-  color: #E63E6D;
+  font-size: 50px;
+  color: #DE8971;
   padding-top: 100px;
-  margin-left: -300px;
+  margin-left: 300px;
+}
+
+span{
+  margin-left: 100px;
 }
 
 @media (max-width:1200px) {
@@ -146,6 +151,9 @@ background-color: #FEFBF3;
     font-size: 50px;
       margin-left:auto;
       padding-top: 130px;
+  }
+  span{
+    margin-left: 0px;
   }
 }
 
@@ -156,23 +164,6 @@ background-color: #FEFBF3;
     font-weight: bolder;
 }
 
-.intro_start{
-    width: 70%;
-    margin: 50px auto 100px auto;
-      text-align: left;
-        line-height: 2;
-}
-
-.graphic{
-  width: 50%;
-  float: left;
-  margin-right: 30px;
-}
-
-.start{
-text-align: center;
-
-}
 
 .h1{
   color: #E63E6D;
@@ -181,40 +172,28 @@ text-align: center;
 .h3{
   font-family: 'Scheherazade New', serif;
   font-size: 23px;
-}
-
-.graphic1{
   width: 50%;
-  float: right;
-  margin-left: 30px;
+  text-align: center;
+  margin-left: 300px;
 }
 
-
-.anwari{
-  padding-top:100px;
+.explanation{
+  text-align: center;
 }
 
-.surekha{
-  padding-top: 60px;
+.graphic{
+  border-radius: 30px;
+  border-style: solid;
 }
-
 
 @media screen and (max-width:1200px) {
-    .anwari{
-      padding-top: 0px;
-    }
+  .h3{
+    margin-left: 150px;
+  }
 
-    .graphic1{
-      margin-left: 20px;
-    }
-
-    .surekha{
-      padding-top: 0px;
-    }
-
-    .surekha1{
-      font-size: 25px;
-    }
+  .graphic{
+    width:100%;
+  }
 }
 
 .chart_h1{
@@ -223,7 +202,7 @@ text-align: center;
 }
 
 .sub_intro{
-    color: #B24080;
+    color: #B24080
 }
 
 .made_by_us{

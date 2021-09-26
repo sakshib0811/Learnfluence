@@ -96,9 +96,6 @@ h1{
   line-height: 1.5;
 }
 
-#learn-more{
-  background-color: #66DE93;
-}
 
 /* wave desugn in bottom on navigation bar*/
 .custom-shape-divider-top-1631688178 {
@@ -128,7 +125,7 @@ h1{
 
 .about_text{
   padding-left: 100px;
-    padding-top: 100px;
+    padding-top: 180px;
     margin-left: 0px;
     margin-right: 0px;
     padding-right: 0px;
@@ -244,6 +241,10 @@ h1{
   font-weight: bolder;
 }
 
+.h3{
+  color:#B24080;
+}
+
 #features{
   padding: 7% 15%;
   padding-top: 45px;
@@ -262,5 +263,5 @@ h1{
 
 .icon:hover{
     color:#FF2442;
-    
+
 }
