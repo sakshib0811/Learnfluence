@@ -1,103 +1,205 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>QUIZZ TIME!!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/quiz.css">
-    <link rel="icon" href="favicon.ico">
-  </head>
-  <body>
 
-<div class="image">
-  <img class="image_main" src="images\quiz-neon-sign_1262-19629.jpg" alt="">
-</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QUIZZ TIME!!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/quiz.css">
+  <link rel="icon" href="favicon.ico">
+</head>
 
-<div class="content">
+<body>
 
+  <div class="image">
+    <img class="image_main" src="images\quiz-neon-sign_1262-19629.jpg" alt="">
+  </div>
 
-<div class="Start_Quiz">
-  <button onclick="myFunction()" id="btn_start" class="btn" type="button" name="button">START QUIZ</button>
-
-</div>
+  <div class="content">
 
 
-<div class="container" id="ques_one">
+    <div class="Start_Quiz">
+      <button onclick="myFunction()" id="btn_start" class="btn" type="button" name="button">START QUIZ</button>
 
-  Q1 Which of the following is correct for pure water? <br>
-  <input type="radio" name="ques1" value="0" >Pure water is odourless. <br>
-  <input type="radio" name="ques1" value="0" >Pure water is tasteless. <br>
-  <input type="radio" name="ques1" value="0" >Pure water is colorless. <br>
-  <input type="radio" name="ques1" value="1" >All of these. <br>
-  <button class="bt"type="submit"  onclick="onSubmit_one(); myFirstQuestion()" >next</button>
-</div>
+    </div>
 
 
-<div class="container" id="ques_two">
-  Q2 We use water for __________. <br>
-  <input type="radio" name="ques2" value="0">Washing <br>
-  <input type="radio" name="ques2" value="0">Drinking <br>
-  <input type="radio" name="ques2" value="0">Cooking <br>
-  <input type="radio" name="ques2" value="1">All of these <br>
-  <button class="bt" type="submit" onclick=" onSubmit_two(); mySecondQuestion()">next</button>
-</div>
 
-<div class="container" id="ques_three">
-  Q3 Drinking water is in the form of ________. <br>
-  <input type="radio" name="ques3" value="1">Liqid <br>
-  <input type="radio" name="ques3" value="0">Gelly <br>
-  <input type="radio" name="ques3" value="0">Steam <br>
-  <input type="radio" name="ques3" value="0">None of these<br>
-  <button class="bt" type="submit" onclick="onSubmit_three(); myThirdQuestion()">next</button>
-</div>
+    <!-- QUES 1 -->
+    <div class="container" id="ques_one">
 
-<div class="container" id="ques_four">
-  Q4 Which of the following containers do we use to store water in the house? <br>
-  <input type="radio" name="ques4" value="0">Bottles <br>
-  <input type="radio" name="ques4" value="0">Bucket <br>
-  <input type="radio" name="ques4" value="1">both a and b <br>
-  <input type="radio" name="ques4" value="0">pond<br>
-  <button class="bt" type="submit" onclick="onSubmit_four(); myFourthQuestion()">submit</button>
-</div>
+      Q1 Which of the following is correct for pure water? <br>
+
+      <div class="ans">
+        <input type="radio" name="ques1" value="0">
+        <span>Pure water is odourless. </span>
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques1" value="0">
+        <span>Pure water is tasteless. </span>
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques1" value="0">
+        <span> Pure water is colorless.</span>
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques1" value="1" valid="valid">
+        <span>All of these.</span>
+      </div>
+
+      <button class="bt" type="submit" onclick="onSubmit_one(); myFirstQuestion()">next</button>
+    </div>
 
 
-<div class="container" id="ques_five">
-  Q5 Which of the following statements is correct?<br>
-  <input type="radio" name="ques5" value="0">Pure water is sweet in taste.<br>
-  <input type="radio" name="ques5" value="0">Pure water is sweet in taste.<br>
-  <input type="radio" name="ques5" value="1">Pure water is tasteless.<br>
-  <input type="radio" name="ques5" value="0">Pure water is salty in taste.<br>
-  <button class="bt" type="submit" onclick="onSubmit_five(); final_Ans()" >submit</button>
-</div>
+    <!-- QUES 2 -->
+    <div class="container" id="ques_two">
+      Q2 We use water for __________. <br>
+      <div class="ans">
+        <input type="radio" name="ques2" value="0">
+        <span>Washing </span>
+      </div>
 
-<div class="container" id="res">
+
+      <div class="ans">
+        <input type="radio" name="ques2" value="0">
+        <span>Drinking </span>
+      </div>
+
+
+      <div class="ans">
+        <input type="radio" name="ques2" value="0">
+        <span>Cooking </span>
+      </div>
+
+
+      <div class="ans">
+        <input type="radio" name="ques2" value="1" valid="valid">
+        <span>All of these</span>
+      </div>
+
+      <button class="bt" type="submit" onclick=" onSubmit_two(); mySecondQuestion()">next</button>
+    </div>
+
+
+    <!-- QUES 3 -->
+    <div class="container" id="ques_three">
+      Q3 Drinking water is in the form of ________. <br>
+
+      <div class="ans">
+        <input type="radio" name="ques3" value="1" valid="valid">
+        <span> Liquid. </span>
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques3" value="0">
+        <span>Gelly. </span>
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques3" value="0">
+        <span> Steam.</span>
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques3" value="0">
+        <span>None of these.</span>
+      </div>
+
+      <button class="bt" type="submit" onclick="onSubmit_three(); myThirdQuestion()">next</button>
+    </div>
+
+
+    <!-- QUES 4 -->
+    <div class="container" id="ques_four">
+      Q4 Which of the following containers do we use to store water in the house? <br>
+
+      <div class="ans">
+        <input type="radio" name="ques4" value="0">
+        <span>Bottles.</span>
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques4" value="0">
+        <span>Bucket.</span>
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques4" value="1" valid="valid">
+        <span>both a and b.</span>
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques4" value="0">
+        <span> pond.</span>
+      </div>
+
+      <button class="bt" type="submit" onclick="onSubmit_four(); myFourthQuestion()">submit</button>
+    </div>
+
+
+    <!-- QUES 5 -->
+    <div class="container" id="ques_five">
+      Q5 Which of the following statements is correct?<br>
+
+      <div class="ans">
+        <input type="radio" name="ques5" value="0">
+        <span>Pure water is sweet in taste.</span>
+
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques5" value="0">
+        <span> Pure water is sour in taste.</span>
+
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques5" value="1" valid="valid">
+        <span> Pure water is tasteless.</span>
+
+      </div>
+
+      <div class="ans">
+        <input type="radio" name="ques5" value="0">
+        <span>Pure water is salty in taste.</span>
+
+      </div>
+
+      <button class="bt" type="submit" onclick="onSubmit_five(); final_Ans()">submit</button>
+    </div>
+
+    <div class="container" id="res">
       <h1 id="result"></h1>
-      <button class="bt" type="submit" onclick="display_Result()" >Click here for Correct Answers.</button>
-</div>
+      <button class="bt" type="submit" onclick="display_Result()">Click here for Correct Answers.</button>
+    </div>
 
 
 
-<div class="container" id="final_Result">
-    <h1>CORRECT ANSWER FOR EACH QUESTION</h1>
-    <ul>
-      <li>QUESTION 1: "All of these"</li>
-      <li>QUESTION 2: "Washing, Cooking, Drinking."</li>
-      <li>QUESTION 3: "Liqid."</li>
-      <li>QUESTION 4: "Bottles, Bucket."</li>
-      <li>QUESTION 5: "Pure water is tasteless."</li>
-    </ul>
-</div>
+    <div class="container" id="final_Result">
+      <h1>CORRECT ANSWER FOR EACH QUESTION</h1>
+      <ul>
+        <li>QUESTION 1: "All of these"</li>
+        <li>QUESTION 2: "Washing, Cooking, Drinking."</li>
+        <li>QUESTION 3: "Liqid."</li>
+        <li>QUESTION 4: "Bottles, Bucket."</li>
+        <li>QUESTION 5: "Pure water is tasteless."</li>
+      </ul>
+    </div>
 
-<div class="" id="home_page">
-  <a href="index.html">click here for home page</a>
-</div>
+    <div class="" id="home_page">
+      <a href="index.html">click here for home page</a>
+    </div>
 
-</div>
+  </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-<script src="quiz.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  <script src="quiz.js"></script>
 
-  </body>
+</body>
+
 </html>
